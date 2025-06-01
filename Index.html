@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Basic Meta Tags -->
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Nasiol Cave - A stunning underground natural cave in Eastern Ethiopia's Melka Belo district. Top tourist attraction in Africa and the world." />
+<meta name="keywords" content="Nasiol Cave, Ethiopia, Cave tourism, Melka Belo, Tokkuma Bilisummaa, Tourist attractions Africa, Natural caves" />
+<meta name="author" content="Your Name or Organization" />
+<meta name="robots" content="index, follow" />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:title" content="Nasiol Cave - Beautiful Natural Cave in Ethiopia" />
+<meta property="og:description" content="Discover Nasiol Cave, a breathtaking underground cave in Eastern Ethiopia’s Melka Belo district. Perfect for tourists and nature lovers." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://yourwebsiteurl.com" />
+<meta property="og:image" content="https://yourwebsiteurl.com/path-to-cave-image.jpg" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Nasiol Cave - Beautiful Natural Cave in Ethiopia" />
+<meta name="twitter:description" content="Discover Nasiol Cave, a breathtaking underground cave in Eastern Ethiopia’s Melka Belo district. Perfect for tourists and nature lovers." />
+<meta name="twitter:image" content="https://yourwebsiteurl.com/path-to-cave-image.jpg" />
+
+<!-- Title -->
+<title>Nasiol Cave - Beautiful Natural Cave in Ethiopia</title>
+  <title>Nasiol Cave – Africa’s Hidden Underground Wonder</title>
+  <style>
+    /* Reset & base */
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #000;
+      color: #eee;
+      line-height: 1.6;
+    }
+    h1, h2 {
+      margin-bottom: 0.5rem;
+    }
+    a {
+      color: #49a6e9;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: url('Gallery/G6.jpg') center/cover no-repeat;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background-blend-mode: multiply;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 0 20px;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      max-width: 900px;
+      margin-bottom: 1rem;
+      font-weight: 900;
+      text-shadow: 0 0 10px #000;
+    }
+    .hero p {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+      text-shadow: 0 0 8px #000;
+    }
+    .btn-primary {
+      background-color: #49a6e9;
+      border: none;
+      padding: 15px 40px;
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 5px 15px #2c6dbd;
+      transition: background-color 0.3s ease;
+    }
+    .btn-primary:hover {
+      background-color: #3478c4;
+    }
+
+    /* Section styles */
+    section {
+      max-width: 1100px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    /* About Section */
+    #about p {
+      font-size: 1.15rem;
+      max-width: 900px;
+      margin: 0 auto;
+      color: #ddd;
+    }
+.btn-primary {
+      background-color: #49a6e9;
+      border: none;
+      padding: 15px 40px;
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 5px 15px #2c6dbd;
+      transition: background-color 0.3s ease;
+    }
+    .btn-primary a{
+    	color: white;
+    	font-family: bold;
+    	text-decoration: none;
+    	font-size: 15px;
+    }
+   .btn-primary:hover {
+      background-color: #3478c4;
+    }
+
+    /* Highlights */
+    #highlights ul {
+      list-style: none;
+      padding: 0;
+      max-width: 900px;
+      margin: 20px auto 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      color: #a8c0ff;
+    }
+    #highlights li {
+      font-size: 1.2rem;
+      background-color: #111;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(73, 166, 233, 0.3);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    /* Gallery */
+    #gallery {
+      color: white;
+    }
+    #gallery h2 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .gallery-grid img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.7);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    .gallery-grid img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Lightbox Overlay */
+    #lightbox-overlay {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0,0,0,0.9);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      z-index: 9999;
+    }
+    #lightbox-overlay.visible {
+      visibility: visible;
+      opacity: 1;
+    }
+    #lightbox-overlay img {
+      max-width: 90vw;
+      max-height: 90vh;
+      border-radius: 10px;
+      box-shadow: 0 0 20px white;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #111;
+      color: #888;
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 0.9rem;
+      user-select: none;
+    }
+
+    /* Responsive font sizes */
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+      .hero p {
+        font-size: 1rem;
+      }
+      .btn-primary {
+        font-size: 1rem;
+        padding: 12px 30px;
+      }
+    }
+    #visitor-info h2, #visitor-info h3 {
+  color: #49a6e9;
+}
+#visitor-info p {
+  line-height: 1.5;
+}
+#testimonials {
+  padding: 60px 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+#testimonials h2 {
+  font-size: 2.5em;
+  color: #2c3e50;
+  margin-bottom: 40px;
+}
+
+.testimonial-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.testimonial {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 320px;
+  transition: transform 0.3s ease;
+}
+
+.testimonial:hover {
+  transform: translateY(-5px);
+}
+
+.testimonial p {
+  font-style: italic;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.testimonial h4 {
+  font-weight: normal;
+  color: #777;
+  font-size: 0.95em;
+}
+
+.stars {
+  font-size: 1.2em;
+  color: gold;
+  margin-bottom: 10px;
+}
+#video-testimonials {
+  padding: 60px 20px;
+  background-color: #eaf6f6;
+  text-align: center;
+}
+
+#video-testimonials h2 {
+  font-size: 2.2em;
+  margin-bottom: 40px;
+  color: #2c3e50;
+}
+
+.video-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.video-box {
+  max-width: 500px;
+  width: 100%;
+  background: white;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.video-box p {
+  margin-top: 10px;
+  font-style: italic;
+  color: #555;
+}
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Nasiol Cave – Africa’s Hidden Underground Wonder</h1>
+    <p>The 2nd Largest Cave in the World, Located in Eastern Ethiopia</p>
+    <button class="btn-primary" onclick="scrollToSection('about')">Plan Your Visit</button>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Nasiol Cave</h2>
+    <p>
+      Nasiol Cave is a breathtaking underground natural cave located in Tokkuma Bilisummaa village,
+      Melka Belo district of Eastern Ethiopia. It was discovered by cave specialist <strong>Nasir Ahmad</strong>
+      and is celebrated as the second largest cave in the world and the largest in Africa.
+      A marvel of nature, Nasiol Cave attracts adventurers, geologists, and tourists seeking raw beauty
+      and subterranean wonder.
+    </p>
+     <button class="btn-primary"><a href="NasirStory.html">History of Explorer </a></button>
+  </section>
+  <!-- Highlights Section -->
+  <section id="highlights">
+    <h2>Why Visit Nasiol Cave?</h2>
+    <ul>
+      <li>🌍 World’s 2nd Largest Cave</li>
+      <li>🌄 Untouched Natural Beauty</li>
+      <li>🌿 Rich Geological Formations</li>
+      <li>🧭 Guided Adventure Tours</li>
+      <li>📸 Perfect for Photography</li>
+      <li>🏕️ Scenic Eastern Ethiopian Landscape</li>
+    </ul>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="Gallery/G.jpg" alt="Nasiol Cave photo 1" />
+      <img src="Gallery/G1.jpg" alt="Nasiol Cave photo 2" />
+      <img src="Gallery/G2.jpg" alt="Nasiol Cave photo 3" />
+      <img src="Gallery/G4.jpg" alt="Nasiol Cave photo 4" />
+      <img src="Gallery/G5.jpg" alt="Nasiol Cave photo 5" />
+      <img src="Gallery/G6.jpg" alt="Nasiol Cave photo 6" />
+    </div>
+  </section>
+<!-- Visitor Information Section -->
+<section id="visitor-info" style="max-width: 1100px; margin: 60px auto; padding: 0 20px; color: #eee;">
+  <h2>Visitor Information</h2>
+  <div style="display: grid; gap: 30px; grid-template-columns: 1fr 1fr;">
+
+    <div>
+      <h3>How to Get There</h3>
+      <p>
+        Nasiol Cave is located in Tokkuma Bilisummaa village, Melka Belo district, Eastern Ethiopia.<br/>
+        The nearest major city is Dire Dawa (approx. 5-hour drive). Visitors can reach the cave by road via
+        local transport or private tours.
+      </p>
+    </div>
+
+    <div>
+      <h3>Best Time to Visit</h3>
+      <p>
+        The ideal visiting period is during the dry season (October to March) when roads are accessible and the cave environment is safest and most enjoyable.
+      </p>
+    </div>
+
+    <div>
+      <h3>Local Accommodations</h3>
+      <p>
+        Nearby towns offer guesthouses and lodges. Visitors can also stay in Dire Dawa for a wider range of hotels and easy access to the cave.
+      </p>
+    </div>
+
+    <div>
+      <h3>Safety Guidelines</h3>
+      <p>
+        Visitors should join guided tours to navigate the cave safely.<br/>
+        Wear sturdy footwear, bring a flashlight, and be cautious of slippery or uneven surfaces inside the cave.
+      </p>
+    </div>
+
+  </div>
+
+  <!-- Optional: Embed a simple map iframe for location -->
+  <div style="margin-top: 40px; text-align: center;">
+    <h3>Location Map</h3>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.974244591706!2d42.12129971536211!3d9.84723398282293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b9ff7a55fdfd5%3A0x2b9c1dcbfc3ac07c!2sMelka%20Belo%20District!5e0!3m2!1sen!2set!4v1680000000000!5m2!1sen!2set"
+      width="100%"
+      height="300"
+      style="border:0; border-radius: 12px;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      title="Melka Belo District Map"
+    ></iframe>
+  </div>
+</section>
+<!-- Contact / Booking Form Section -->
+<section id="contact" style="max-width: 700px; margin: 60px auto; padding: 0 20px; color: #eee;">
+  <h2>Book a Tour / Contact Us</h2>
+  <form id="contactForm" style="display: flex; flex-direction: column; gap: 15px;">
+    <label>
+      Name:<br />
+      <input type="text" id="name" required style="width: 100%; padding: 10px; border-radius: 6px; border: none; font-size: 1rem;" />
+    </label>
+    <label>
+      Email:<br />
+      <input type="email" id="email" required style="width: 100%; padding: 10px; border-radius: 6px; border: none; font-size: 1rem;" />
+    </label>
+    <label>
+      Number of Visitors:<br />
+      <input type="number" id="visitors" min="1" max="20" value="1" required style="width: 100%; padding: 10px; border-radius: 6px; border: none; font-size: 1rem;" />
+    </label>
+    <label>
+      Message (Optional):<br />
+      <textarea id="message" rows="4" placeholder="Your questions or requests..." style="width: 100%; padding: 10px; border-radius: 6px; border: none; font-size: 1rem;"></textarea>
+    </label>
+    <button type="submit" class="btn-primary" style="align-self: flex-start;">Submit</button>
+    <p id="formMessage" style="margin-top: 10px; color: #4ade80; font-weight: 600;"></p>
+  </form>
+</section>
+
+<script>
+  const form = document.getElementById('contactForm');
+  const formMessage = document.getElementById('formMessage');
+
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    // Simple validation check (fields required by HTML5)
+    const name = form.name.value.trim();
+    const email = form.email.value.trim();
+    const visitors = form.visitors.value.trim();
+
+    if (!name || !email || !visitors) {
+      formMessage.textContent = "Please fill in all required fields.";
+      formMessage.style.color = '#f87171'; // red-ish
+      return;
+    }
+
+    // Normally, here you would send data to your backend server.
+    // For now, just simulate success:
+    formMessage.textContent = "Thank you, " + name + "! Your request has been received. We'll contact you soon.";
+    formMessage.style.color = '#4ade80'; // green-ish
+
+    // Clear form fields
+    form.reset();
+  });
+</script>
+<section id="testimonials">
+  <h2>What People Say About Nasiol Cave</h2>
+  <div class="testimonial-container">
+    
+    <div class="testimonial">
+      <p>“An unforgettable experience. The natural beauty inside the cave is beyond imagination!”</p>
+      <div class="stars">★★★★★</div>
+      <h4>— Aisha Ibrahim, Local Visitor</h4>
+    </div>
+
+    <div class="testimonial">
+      <p>“Nasiol Cave is a rare geological wonder. Its formation tells a unique story of nature.”</p>
+      <div class="stars">★★★★☆</div>
+      <h4>— Dr. Elias M., Geologist & Cave Researcher</h4>
+    </div>
+
+    <div class="testimonial">
+      <p>“This is the kind of destination that makes you feel deeply connected to the Earth.”</p>
+      <div class="stars">★★★★★</div>
+      <h4>— Sophia Reed, Eco-Tourist from Canada</h4>
+    </div>
+
+  </div>
+</section>
+<!-- FAQ Section -->
+<section id="faq" style="max-width: 900px; margin: 60px auto; padding: 0 20px; color: #eee;">
+  <h2>Frequently Asked Questions</h2>
+  <div class="faq-item">
+    <button class="faq-question">Is Nasiol Cave suitable for children?</button>
+    <div class="faq-answer">
+      <p>Yes, children can visit but must be supervised closely due to uneven terrain inside the cave. Guided tours help ensure safety.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">How long does a typical tour last?</button>
+    <div class="faq-answer">
+      <p>Tours typically last 2 to 3 hours depending on the route and group size.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">What should I bring for the cave visit?</button>
+    <div class="faq-answer">
+      <p>Wear sturdy shoes, bring a flashlight or headlamp, water, and a light jacket as it can be cool inside.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">Are there guided tours available?</button>
+    <div class="faq-answer">
+      <p>Yes, local guides offer tours and can be arranged in advance or on arrival.</p>
+    </div>
+  </div>
+</section>
+
+<style>
+  .faq-item {
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: #111;
+    box-shadow: 0 0 8px rgba(73, 166, 233, 0.3);
+  }
+  .faq-question {
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    padding: 15px 20px;
+    font-size: 1.1rem;
+    color: #49a6e9;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 8px;
+  }
+  .faq-question:focus {
+    outline: 2px solid #49a6e9;
+  }
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 20px;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    color: #ccc;
+  }
+  .faq-answer.open {
+    max-height: 200px; /* enough height for answer text */
+    padding: 15px 20px;
+  }
+</style>
+
+<script>
+  const faqButtons = document.querySelectorAll('.faq-question');
+
+  faqButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const answer = button.nextElementSibling;
+      answer.classList.toggle('open');
+    });
+  });
+</script>
+<section id="video-testimonials">
+  <h2>🎥 Visitor Testimonials</h2>
+  <div class="video-container">
+
+    <!-- YouTube or local video -->
+   <video width="100%" controls>
+  <source src="videos/nasir_testimonial.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+  <video width="100%" controls>
+  <source src="videos/nasir_testimonial.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<video width="100%" controls>
+  <source src="videos/nasir_testimonial.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<video width="100%" controls>
+  <source src="videos/nasir_testimonial.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+  </div>
+</section>
+<!-- Social Media Links -->
+<section id="social-media" style="max-width: 900px; margin: 40px auto; padding: 0 20px; text-align: center; color: #eee;">
+  <h2>Follow Us</h2>
+  <div class="social-icons" style="margin-top: 15px; display: flex; justify-content: center; gap: 30px; font-size: 2.5rem;">
+    <a href="#" target="_blank" aria-label="Facebook" class="social-link" title="Facebook" rel="noopener noreferrer">
+      <svg fill="#49a6e9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36"><path d="M22.675 0h-21.35C.594 0 0 .593 0 1.326v21.348C0 23.406.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.466.098 2.797.142v3.24l-1.918.001c-1.504 0-1.796.715-1.796 1.763v2.31h3.59l-.467 3.622h-3.123V24h6.116c.73 0 1.324-.594 1.324-1.326V1.326C24 .593 23.406 0 22.675 0z"/></svg>
+    </a>
+    <a href="#" target="_blank" aria-label="Twitter" class="social-link" title="Twitter" rel="noopener noreferrer">
+      <svg fill="#49a6e9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36"><path d="M24 4.557a9.83 9.83 0 01-2.828.775 4.932 4.932 0 002.165-2.724 9.865 9.865 0 01-3.127 1.195 4.92 4.92 0 00-8.384 4.482A13.978 13.978 0 011.671 3.149 4.92 4.92 0 003.195 9.723 4.9 4.9 0 012.8 9.388v.062a4.922 4.922 0 003.946 4.827 4.9 4.9 0 01-2.212.084 4.923 4.923 0 004.6 3.417 9.868 9.868 0 01-6.102 2.105c-.396 0-.787-.023-1.17-.067a13.945 13.945 0 007.548 2.212c9.058 0 14.01-7.513 14.01-14.01 0-.213-.005-.425-.014-.636A10.012 10.012 0 0024 4.557z"/></svg>
+    </a>
+    <a href="#" target="_blank" aria-label="Instagram" class="social-link" title="Instagram" rel="noopener noreferrer">
+      <svg fill="#49a6e9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36"><path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 2A3.75 3.75 0 004 7.75v8.5A3.75 3.75 0 007.75 20h8.5a3.75 3.75 0 003.75-3.75v-8.5A3.75 3.75 0 0016.25 4h-8.5zm8.125 2.375a1.125 1.125 0 110 2.25 1.125 1.125 0 010-2.25zm-4.125 1.875a4.5 4.5 0 110 9 4.5 4.5 0 010-9zm0 2a2.5 2.5 0 100 5 2.5 2.5 0 000-5z"/></svg>
+    </a>
+    <a href="#" target="_blank" aria-label="YouTube" class="social-link" title="YouTube" rel="noopener noreferrer">
+      <svg fill="#49a6e9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36"><path d="M19.615 3.184a3.073 3.073 0 00-2.166-2.17C15.26.5 12 0.5 12 0.5s-3.26 0-5.45.515a3.073 3.073 0 00-2.166 2.17C4 5.4 4 8.497 4 8.497s0 3.09.384 5.315a3.073 3.073 0 002.166 2.166c2.19.517 5.45.517 5.45.517s3.26 0 5.45-.517a3.073 3.073 0 002.166-2.166c.384-2.224.384-5.315.384-5.315s0-3.1-.385-5.313zM10 12.797V6.5l5.25 3.148L10 12.797z"/></svg>
+    </a>
+  </div>
+</section>
+
+<style>
+  #social-media h2 {
+    color: #49a6e9;
+  }
+  .social-link svg {
+    transition: fill 0.3s ease;
+  }
+  .social-link:hover svg {
+    fill: #3478c4;
+  }
+</style>
+  <!-- Lightbox Overlay -->
+  <div id="lightbox-overlay"></div>
+ 
+  <!-- Footer -->
+  <footer>
+    &copy; <span id="year"></span> Nasiol Cave. All rights reserved. <br>
+    designed by:Aliyi Abdullahi Mohammed (Eng)
+  </footer>
+
+  <script>
+    // Scroll to section
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Lightbox functionality
+    const lightboxOverlay = document.getElementById('lightbox-overlay');
+    const galleryImages = document.querySelectorAll('.gallery-grid img');
+
+    galleryImages.forEach(img => {
+      img.addEventListener('click', () => {
+        lightboxOverlay.innerHTML = `<img src="${img.src}" alt="${img.alt}" />`;
+        lightboxOverlay.classList.add('visible');
+      });
+    });
+
+    lightboxOverlay.addEventListener('click', () => {
+      lightboxOverlay.classList.remove('visible');
+    });
+
+    // Set current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TouristAttraction",
+  "name": "Nasiol Cave",
+  "description": "Nasiol Cave is a stunning underground natural cave located in Melka Belo district, Tokkuma Bilisummaa village, Eastern Ethiopia. It is the 2nd largest cave in the world and the largest in Africa, known for its breathtaking formations and tourism appeal.",
+  "image": "https://yourwebsiteurl.com/path-to-cave-image.jpg",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Tokkuma Bilisummaa",
+    "addressRegion": "Melka Belo District",
+    "addressCountry": "Ethiopia"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 9.8472,
+    "longitude": 42.1213
+  },
+  "url": "https://yourwebsiteurl.com",
+  "telephone": "+251-XXX-XXX-XXXX",
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ],
+    "opens": "08:00",
+    "closes": "18:00"
+  }
+}
+</script>
+</body>
+</html>
